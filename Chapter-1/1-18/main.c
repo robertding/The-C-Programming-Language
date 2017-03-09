@@ -10,10 +10,11 @@ int main() {
     char line[MAXLINE];
 
     max = 0;
-    while ((len = get_line(line, MAXLINE)) > 0)
+    while ((len = get_line(line, MAXLINE)) > 0) {
         len = rstrip(line, len);
-        if (len > 0)
+        if (len >= 0)
             printf("%s", line);
+    }
     return 0;
 }
 
